@@ -80,3 +80,63 @@
 //For a Fibonacci sequence starting at 0 and 1 add up all the values below 1,000,000.
 //A Fibonacci sequence is an infinite series of numbers that is created by adding the last two numbers in the series. A series would start with the numbers 0 and 1 in place, followed by 1 (0+1), 2 (1+1), 3 (1+2), 5 (3+2), etc.
 
+//make variable with empty array
+//make for loop to loop through array from 1 to 1 million
+// condition with if statement for thew first 2 numbers
+// the current element is the sum of the previous element
+// output array
+
+//t-diagram
+//step:iterations 1, 2, 3 (for loop)
+//value of i: i=0, i=1, i=3
+//first condition:arr[0]=0, arr[1]=1, arr[2]=1
+//second condition:arr[0]=0,[0], arr[1]=1,[0,1], arr[2]=1,[0,1,1]
+//output: 0,1,1,
+
+// let arr=[]
+// for(let i=0; i< 1000000; i++){
+//     if (i==0 || i==1){
+//      arr[i]=i }
+//     else{ arr[i]= arr[i - 1] + arr[i-2]
+
+//     }
+// }
+// console.log(arr)
+
+//5. Remove the Negative
+//Given any array X, for example [1,-2,4,1], remove the negative numbers, so that the output becomes: [1,4,1].
+
+//T-diagram
+//step:iterations 1, 2, 3 (for loop)
+//value of i: i=0, i=1, i=3
+//first condition:x[i]=1 (false), x[i]=-2 (true so it deletes the -2),
+//output: 1,4,1
+
+// let x =[1,-2,4,1]
+// for(let i=0; i< x.length; i++){
+//     if(x[i] < 0){
+//         x.splice(i, 1)
+//         i=i-1
+//     }
+// }
+// console.log(x)
+
+//6. Communist Censorship
+//Given the array of strings X = ['Man', 'I','Love','The','Matrix','Program'], replace every letter of the word Program with *, so the output would be ['Man', 'I','Love','The','Matrix','*******']. Then make your algorithm work for any word of your choice
+
+//T-diagram
+//
+
+let x = ["Man", "I", "Love", "The", "Matrix", "Program"];
+let arr = "javascript";
+let str = "";
+
+for (let i = 1; i < arr.length; i++) {
+  str += "*";
+}
+for (let i = 0; i < x.length; i++) {
+  if (arr == x[i]) {
+    x[i] = str;
+  }
+}
+console.log(x);
