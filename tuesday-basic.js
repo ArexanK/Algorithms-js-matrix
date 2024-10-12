@@ -13,14 +13,14 @@
 //condition: true (divided by 3 and 5), true(divided by 3 and 5),  false(only divided by 3 not 5)
 //output: sum=0+200=200, sum=200+201=401, sum=200+ 202=402
 
-// let sum = 0;
-// for (let i = 200; i <= 2700; i++) {
-//   if ((i % 3 == 0 || i % 5 == 0) && !(i % 3 == 0 && i % 5 == 0)) {
-//     sum = sum + i;
-//     //sum+=i
-//   }
-// }
-// console.log(sum);
+let sum = 0;
+for (let i = 200; i <= 2700; i++) {
+  if ((i % 3 == 0 || i % 5 == 0) && !(i % 3 == 0 && i % 5 == 0)) {
+    sum = sum + i;
+    //sum+=i
+  }
+}
+console.log(sum);
 
 //2. Shift the Values
 //Given any array X, for example [2,1,6,4,-7], create an algorithm that shifts each number by one to the front. When your program is done the output for array [2,1,6,4,-7] should be [-7,4,6,1,2].
@@ -37,12 +37,12 @@
 //condition (arr): [2], [1, 2], [6,1,2], [4,6,1,2], [-7,4,6,1,2]
 //output: [-7,4,6,1,2]
 
-// let arr=[]
-// let x= [2,1,6,4,-7]
-// for(let i=0; i<x.length; i++){
-//     arr.unshift(x[i])
-// }
-// console.log(arr)
+let arr = [];
+let x = [2, 1, 6, 4, -7];
+for (let i = 0; i < x.length; i++) {
+  arr.unshift(x[i]);
+}
+console.log(arr);
 
 //3. FizzBuzz
 //Create an algorithm that inserts the numbers from 1 to 135 into an array, while replacing the values that are divisible by 3 with the word "Fizz", the numbers that are divisible by 5 with the word "Buzz", and the numbers that are divisible with 3 and 5 with the word "FizzBuzz".
@@ -62,19 +62,19 @@
 //third condition:  i % 5 == 0 [true][false][false][false]
 //output:arr[0] = "fizzBuzz", arr[1] = 1, arr[2] = 2, arr[3] = "fizz"
 
-// let arr = [];
-// for (let i = 0; i <= 135; i++) {
-//   if (i % 3 == 0 && i % 5 == 0) {
-//     arr[i] = "fizzBuzz";
-//   } else if (i % 3 == 0) {
-//     arr[i] = "fizz";
-//   } else if (i % 5 == 0) {
-//     arr[i] = "Buzz";
-//   } else {
-//     arr[i] = i;
-//   }
-// }
-// console.log(arr);
+let arr = [];
+for (let i = 0; i <= 135; i++) {
+  if (i % 3 == 0 && i % 5 == 0) {
+    arr[i] = "fizzBuzz";
+  } else if (i % 3 == 0) {
+    arr[i] = "fizz";
+  } else if (i % 5 == 0) {
+    arr[i] = "Buzz";
+  } else {
+    arr[i] = i;
+  }
+}
+console.log(arr);
 
 //4. Fibonacci
 //For a Fibonacci sequence starting at 0 and 1 add up all the values below 1,000,000.
@@ -93,15 +93,15 @@
 //second condition:arr[0]=0,[0], arr[1]=1,[0,1], arr[2]=1,[0,1,1]
 //output: 0,1,1,
 
-// let arr=[]
-// for(let i=0; i< 1000000; i++){
-//     if (i==0 || i==1){
-//      arr[i]=i }
-//     else{ arr[i]= arr[i - 1] + arr[i-2]
-
-//     }
-// }
-// console.log(arr)
+let arr = [];
+for (let i = 0; i < 1000000; i++) {
+  if (i == 0 || i == 1) {
+    arr[i] = i;
+  } else {
+    arr[i] = arr[i - 1] + arr[i - 2];
+  }
+}
+console.log(arr);
 
 //5. Remove the Negative
 //Given any array X, for example [1,-2,4,1], remove the negative numbers, so that the output becomes: [1,4,1].
@@ -112,20 +112,23 @@
 //first condition:x[i]=1 (false), x[i]=-2 (true so it deletes the -2),
 //output: 1,4,1
 
-// let x =[1,-2,4,1]
-// for(let i=0; i< x.length; i++){
-//     if(x[i] < 0){
-//         x.splice(i, 1)
-//         i=i-1
-//     }
-// }
-// console.log(x)
+let x = [1, -2, 4, 1];
+for (let i = 0; i < x.length; i++) {
+  if (x[i] < 0) {
+    x.splice(i, 1);
+    i = i - 1;
+  }
+}
+console.log(x);
 
 //6. Communist Censorship
 //Given the array of strings X = ['Man', 'I','Love','The','Matrix','Program'], replace every letter of the word Program with *, so the output would be ['Man', 'I','Love','The','Matrix','*******']. Then make your algorithm work for any word of your choice
 
 //T-diagram
-//
+//step: iterations 1, 2, 3 (for loop)
+// value of 1: i=0, i=1, i=3
+// condition match: x[i]= "Man" (false), x[1]=I (false), x[2]="Love"(false), x[3]="The"(false), x[4]="Matrix"(false), x[5]="Program"(true)
+//output : ['Man', 'I','Love','The','Matrix','*******']
 
 let x = ["Man", "I", "Love", "The", "Matrix", "Program"];
 let arr = "javascript";
