@@ -1,7 +1,7 @@
 //Exercise 1: Factorialize
 
 //T-diagram
-//step:
+//step:iteration 1, 2, 3
 //value opf i: i=1 , i=2, i=3
 //condition: factor=1*1= 1, factor=1*2=2, factor=2*3=6
 //output:
