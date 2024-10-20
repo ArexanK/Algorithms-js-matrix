@@ -1,6 +1,6 @@
 //Fibonacci Sequence
 
-// dedine a function takes numbers as parameters
+// define a function takes numbers as parameters
 //define variables, and set one variable to be 1
 //for loop start from 1 and end at the givin number
 //shift the value of the variable
