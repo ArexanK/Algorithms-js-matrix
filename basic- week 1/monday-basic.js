@@ -24,6 +24,7 @@ for (let i = 0; i <= 135; i++) {
 // is it odd: i = 1 (yes) i = 2(no ) i= 3(yes)
 //output: i= 1 (1) i=2(-) i= 3(3)
 
+
 for(let i = 0; i <= 135;i++){
    if (i% 2 != 0)
    { console.log(i)
