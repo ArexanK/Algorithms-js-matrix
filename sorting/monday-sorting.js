@@ -1,7 +1,8 @@
 // Bubble Sort
 
 //define a variable with array of numbers
-//
+// for loop for passing the elements
+// for loop for
 
 //T-diagram
 //index i=
@@ -16,7 +17,6 @@
 //       arr[j] = arr[j + 1];
 //       arr[j + 1] = temp;
 //     }
-
 //   }
 // }
 // console.log(arr);
@@ -36,3 +36,17 @@ function sorting(arr) {
 
 let arr = [6, 14, 22, 9, 5];
 console.log(sorting(arr));
+
+// let arr = [6, 14, 22, 9, 5]; // 5 elements , 4  numbers
+
+// for (let i = 0; i < arr.length; i++) {
+//   //i=2
+//   for (let j = 0; j < arr.length; j++) {
+//     if (arr[j] > arr[j + 1]) {
+//       temp = a[j];
+//       arr[j] = arr[j + 1];
+//       arr[j + 1] = temp;
+//     }
+//   }
+// }
+// console.log(arr);

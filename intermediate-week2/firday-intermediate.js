@@ -17,10 +17,14 @@ function Fibonacci(num) {
   let seq = 1;
   let seq1 = 0;
   let seq2 = 0;
+  //let i=2
+
+  //while(i<=num){}
   for (let i = 2; i <= num; i++) {
     seq2 = seq1;
     seq1 = seq;
     seq = seq1 + seq2;
+    //i++
   }
   return seq;
 }

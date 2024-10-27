@@ -19,7 +19,7 @@
 function largestOfFour(arr) {
   let x = [];
   for (let i = 0; i < arr.length; i++) {// go through the length of the array
-    x.push(arr[i][0]);// 0 of the array i which is [4, 5,1,3]
+    x.push(arr[i][0]);// 0 of the array i which is [4, 5,1000,3]
     for (let j = 0; j < arr[i].length; j++) { //loop to go through all the separated array []
       if (x[i] < arr[i][j]) { //[xf[i] check first subArray smaller than [i][j] the element inside subarray
         x[i] = arr[i][j];

@@ -7,6 +7,7 @@
 // 5. let it continue until i is 135
 
 for (let i = 0; i <= 135; i++) {
+  //is i less than 135 or equal to 135, when 136 loop stop, counting from 0 to 135
   console.log(i);
 }
 
@@ -24,12 +25,18 @@ for (let i = 0; i <= 135; i++) {
 // is it odd: i = 1 (yes) i = 2(no ) i= 3(yes)
 //output: i= 1 (1) i=2(-) i= 3(3)
 
-
-for(let i = 0; i <= 135;i++){
-   if (i% 2 != 0)
-   { console.log(i)
-   }
+for (let i = 0; i <= 135; i++) {
+  if (i % 2 != 0) {
+    // if i is odd number like 3 and is not divisble by 2 condition will be true
+    console.log(i);
+  }
 }
+
+// for (let i = 0; i <= 135; i++) {
+//   if (i % 2 != 0) {
+//     console.log(i);
+//   }
+// }
 
 // 3.Sum of Printed Numbers : Write a program that will print all the numbers from 1 to 135 AND the sum of the numbers that have been printed so far.
 
@@ -68,9 +75,9 @@ for (let i = 1; i <= 135; i++) {
 // condition: true, true, true, true
 // output: 0,1,2,3
 
-let z=[1,4,2,12]
-for(let i =0; i < z.length; i++){
-  console.log(i)
+let z = [1, 4, 2, 12];
+for (let i = 0; i < z.length; i++) {
+  console.log(i);
 }
 
 //5. Find Max
@@ -87,14 +94,14 @@ for(let i =0; i < z.length; i++){
 //condition: false, false, true
 //value max output: 2, 2, 2
 
-let x = [2,-3,-1]
-let max= x[0]
-for(let i= 0; i < x.length; i++){
-  if(max < x [i]){
-    max = x[i]
+let x = [2, -3, -1];
+let max = x[0];
+for (let i = 0; i < x.length; i++) {
+  if (max < x[i]) {
+    max = x[i];
   }
 }
-console.log(max)
+console.log(max);
 
 //6. Get Average
 //Given an array X, write a program that will return the average value of all elements in the array. For example, for array X = [2,1,3] your output should be 2.
@@ -137,13 +144,14 @@ console.log(average);
 //output: [2,0,4,0]
 
 let x = [2, -2, 4, -3];
+//let result=[]
 for (let i = 0; i < x.length; i++) {
   if (x[i] < 0) {
-    x.splice(i, 1,0);
+    x.splice(i, 1);
+    //result.push[xi]
   }
 }
 console.log(x);
-
 
 //8. Number to String
 //Write a program that takes an array of numbers and turns the negative values into strings.
@@ -152,19 +160,16 @@ console.log(x);
 // 2.if condition to check if the element is negative
 // 3.if its true replace the element with "turning" string
 
-
 //T-diagram
 //step:iteration 1, iteration 2, iteration 3, iteration 4
 //value i: i=0, i=1, i=2, i=3
-//condition negative: z[0]= 2 (false, no changes), z[-1]=1(true, negative so 'turning'), z[3]= 4(false, no changes), z[4]=-5(true, changes to 'turning') 
+//condition negative: z[0]= 2 (false, no changes), z[-1]=1(true, negative so 'turning'), z[3]= 4(false, no changes), z[4]=-5(true, changes to 'turning')
 //output: 2, 'turning', 4, 'turning'
 
-
-let z= [2, -3, 4, -5]
-  for(let i=0; i<z.length; i++){
-if(z[i]<0){
-  z[i]='turning'
-  //z.splice(i, 1, 'turning')
-}
+let z = [2, -3, 4, -5];
+for (let i = 0; i < z.length; i++) {
+  if (z[i] < 0) {
+    z[i] = "turning";
   }
-console.log(z)
+}
+console.log(z);

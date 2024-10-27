@@ -9,7 +9,7 @@
 function factorialize(num) {
   let factor = 1;
   for (let i = 1; i <= num; i++) {
-    factor += 1;
+    factor=factor *i;
   }
   return factor;
 }
